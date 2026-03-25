@@ -1,1 +1,437 @@
-<!-- Clubs.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Categories - UniClubs Portal</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                UniClubs
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="clubs.html" class="active">Clubs</a>
+                <a href="events.html">Events</a>
+                <a href="join.html">Join</a>
+                <a href="highlights.html">Highlights</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-shapes">
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+        </div>
+        <div class="hero-content">
+            <span class="section-badge cyan">Discover</span>
+            <h1>Explore Our <span>Club Categories</span></h1>
+            <p>From technology and sports to arts and debate — find the perfect club that matches your interests and ambitions.</p>
+        </div>
+    </section>
+
+    <!-- Clubs Overview Stats -->
+    <section class="section clubs-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-stat">
+                    <i class="fas fa-layer-group" style="color: var(--neon-cyan); text-shadow: 0 0 15px rgba(0,240,255,0.5);"></i>
+                    <h3>6</h3>
+                    <p>Club Categories</p>
+                </div>
+                <div class="overview-stat">
+                    <i class="fas fa-users" style="color: var(--neon-magenta); text-shadow: 0 0 15px rgba(255,0,229,0.5);"></i>
+                    <h3>50+</h3>
+                    <p>Active Clubs</p>
+                </div>
+                <div class="overview-stat">
+                    <i class="fas fa-star" style="color: var(--neon-yellow); text-shadow: 0 0 15px rgba(255,230,0,0.5);"></i>
+                    <h3>200+</h3>
+                    <p>Weekly Activities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Categories -->
+    <section class="section clubs-section">
+        <div class="container">
+
+            <!-- Technology Clubs -->
+            <div class="club-category">
+                <div class="category-header">
+                    <div class="category-icon tech">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div>
+                        <h3>Technology Clubs</h3>
+                        <p>Innovate, code, and build the future with cutting-edge technology</p>
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(0,240,255,0.08); color: var(--neon-cyan); text-shadow: 0 0 12px rgba(0,240,255,0.5);">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Coding Society</h4>
+                        <p>Weekly coding sessions, hackathons, and competitive programming challenges. Open to all skill levels from beginners to advanced developers.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 180 Members</span>
+                            <span><i class="fas fa-calendar"></i> Mon & Wed</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(184,77,255,0.08); color: var(--neon-purple); text-shadow: 0 0 12px rgba(184,77,255,0.5);">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>Robotics Club</h4>
+                        <p>Design, build, and program robots for national competitions. Hands-on experience with Arduino, Raspberry Pi, and industrial robotics.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 95 Members</span>
+                            <span><i class="fas fa-calendar"></i> Tue & Thu</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(57,255,20,0.08); color: var(--neon-green); text-shadow: 0 0 12px rgba(57,255,20,0.5);">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h4>Cybersecurity Club</h4>
+                        <p>Learn ethical hacking, network security, and digital forensics. Participate in Capture The Flag competitions and security workshops.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 72 Members</span>
+                            <span><i class="fas fa-calendar"></i> Friday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sports Clubs -->
+            <div class="club-category">
+                <div class="category-header">
+                    <div class="category-icon sports">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div>
+                        <h3>Sports Clubs</h3>
+                        <p>Stay active, compete, and build team spirit through athletics</p>
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(57,255,20,0.08); color: var(--neon-green); text-shadow: 0 0 12px rgba(57,255,20,0.5);">
+                            <i class="fas fa-basketball"></i>
+                        </div>
+                        <h4>Basketball Team</h4>
+                        <p>Join our competitive basketball team. Regular practice sessions, inter-university tournaments, and friendly matches throughout the semester.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 45 Members</span>
+                            <span><i class="fas fa-calendar"></i> Daily</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(255,106,0,0.08); color: var(--neon-orange); text-shadow: 0 0 12px rgba(255,106,0,0.5);">
+                            <i class="fas fa-table-tennis-paddle-ball"></i>
+                        </div>
+                        <h4>Badminton Club</h4>
+                        <p>Casual and competitive badminton for all levels. We provide equipment and coaching for beginners looking to pick up the sport.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 60 Members</span>
+                            <span><i class="fas fa-calendar"></i> Mon & Fri</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(255,45,120,0.08); color: var(--neon-pink); text-shadow: 0 0 12px rgba(255,45,120,0.5);">
+                            <i class="fas fa-person-swimming"></i>
+                        </div>
+                        <h4>Swimming Club</h4>
+                        <p>Dive into our swimming club with certified coaching, regular training sessions, and opportunities to compete at regional championships.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 38 Members</span>
+                            <span><i class="fas fa-calendar"></i> Tue & Thu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cultural Clubs -->
+            <div class="club-category">
+                <div class="category-header">
+                    <div class="category-icon cultural">
+                        <i class="fas fa-masks-theater"></i>
+                    </div>
+                    <div>
+                        <h3>Cultural Clubs</h3>
+                        <p>Celebrate diversity, heritage, and artistic expression</p>
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(184,77,255,0.08); color: var(--neon-purple); text-shadow: 0 0 12px rgba(184,77,255,0.5);">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h4>Music Society</h4>
+                        <p>From classical to contemporary, our music society welcomes vocalists and instrumentalists. Regular jam sessions and semester-end concerts.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 110 Members</span>
+                            <span><i class="fas fa-calendar"></i> Wed & Sat</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(255,230,0,0.08); color: var(--neon-yellow); text-shadow: 0 0 12px rgba(255,230,0,0.5);">
+                            <i class="fas fa-masks-theater"></i>
+                        </div>
+                        <h4>Drama & Theater</h4>
+                        <p>Express yourself through acting, directing, and stage production. Annual plays, improv nights, and workshops with professional artists.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 85 Members</span>
+                            <span><i class="fas fa-calendar"></i> Mon & Thu</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(255,0,229,0.08); color: var(--neon-magenta); text-shadow: 0 0 12px rgba(255,0,229,0.5);">
+                            <i class="fas fa-earth-americas"></i>
+                        </div>
+                        <h4>International Students Club</h4>
+                        <p>A vibrant community celebrating global cultures through food festivals, language exchanges, and cultural awareness events.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 150 Members</span>
+                            <span><i class="fas fa-calendar"></i> Friday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Debate & Public Speaking -->
+            <div class="club-category">
+                <div class="category-header">
+                    <div class="category-icon debate">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div>
+                        <h3>Debate & Public Speaking</h3>
+                        <p>Sharpen your critical thinking and communication skills</p>
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(255,106,0,0.08); color: var(--neon-orange); text-shadow: 0 0 12px rgba(255,106,0,0.5);">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h4>Debate Society</h4>
+                        <p>Parliamentary and competitive debate formats. Weekly practice rounds, tournament preparation, and public speaking workshops.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 65 Members</span>
+                            <span><i class="fas fa-calendar"></i> Tue & Fri</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(0,240,255,0.08); color: var(--neon-cyan); text-shadow: 0 0 12px rgba(0,240,255,0.5);">
+                            <i class="fas fa-microphone-lines"></i>
+                        </div>
+                        <h4>Model United Nations</h4>
+                        <p>Simulate UN proceedings, develop diplomacy skills, and attend national MUN conferences representing various countries.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 88 Members</span>
+                            <span><i class="fas fa-calendar"></i> Wednesday</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(57,255,20,0.08); color: var(--neon-green); text-shadow: 0 0 12px rgba(57,255,20,0.5);">
+                            <i class="fas fa-podcast"></i>
+                        </div>
+                        <h4>Toastmasters Club</h4>
+                        <p>Improve public speaking and leadership in a supportive environment. Structured programs to build confidence at the podium.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 52 Members</span>
+                            <span><i class="fas fa-calendar"></i> Thursday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Service -->
+            <div class="club-category">
+                <div class="category-header">
+                    <div class="category-icon community">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div>
+                        <h3>Community Service</h3>
+                        <p>Make a difference through volunteer work and social impact</p>
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(255,45,120,0.08); color: var(--neon-pink); text-shadow: 0 0 12px rgba(255,45,120,0.5);">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Volunteer Corps</h4>
+                        <p>Organize community outreach programs, charity drives, and volunteering events to give back to the local community.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 120 Members</span>
+                            <span><i class="fas fa-calendar"></i> Weekends</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(57,255,20,0.08); color: var(--neon-green); text-shadow: 0 0 12px rgba(57,255,20,0.5);">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Green Campus Initiative</h4>
+                        <p>Drive sustainability on campus through recycling programs, tree planting events, and environmental awareness campaigns.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 75 Members</span>
+                            <span><i class="fas fa-calendar"></i> Saturday</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(184,77,255,0.08); color: var(--neon-purple); text-shadow: 0 0 12px rgba(184,77,255,0.5);">
+                            <i class="fas fa-chalkboard-user"></i>
+                        </div>
+                        <h4>Peer Tutoring Network</h4>
+                        <p>Help fellow students succeed academically through free tutoring sessions in math, science, writing, and more.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 90 Members</span>
+                            <span><i class="fas fa-calendar"></i> Mon–Fri</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arts & Creative -->
+            <div class="club-category">
+                <div class="category-header">
+                    <div class="category-icon arts">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div>
+                        <h3>Arts & Creative</h3>
+                        <p>Unleash your creativity through visual arts, design, and media</p>
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(255,230,0,0.08); color: var(--neon-yellow); text-shadow: 0 0 12px rgba(255,230,0,0.5);">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <h4>Photography Club</h4>
+                        <p>Capture campus life through your lens. Weekly photo walks, editing workshops, and annual photography exhibitions.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 95 Members</span>
+                            <span><i class="fas fa-calendar"></i> Wed & Sat</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(255,0,229,0.08); color: var(--neon-magenta); text-shadow: 0 0 12px rgba(255,0,229,0.5);">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h4>Film & Media Club</h4>
+                        <p>Learn filmmaking, video editing, and storytelling. Produce short films, documentaries, and manage the campus media channel.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 68 Members</span>
+                            <span><i class="fas fa-calendar"></i> Tue & Fri</span>
+                        </div>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-card-icon" style="background: rgba(0,240,255,0.08); color: var(--neon-cyan); text-shadow: 0 0 12px rgba(0,240,255,0.5);">
+                            <i class="fas fa-pen-nib"></i>
+                        </div>
+                        <h4>Creative Writing Circle</h4>
+                        <p>Share your stories, poems, and essays in a supportive community. Monthly publications and open mic nights.</p>
+                        <div class="club-card-meta">
+                            <span><i class="fas fa-users"></i> 55 Members</span>
+                            <span><i class="fas fa-calendar"></i> Thursday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-graduation-cap"></i> UniClubs</h3>
+                    <p>Your gateway to an enriched campus experience. Discover, connect, and grow with student clubs at the University.</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="clubs.html">Clubs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="join.html">Join a Club</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="highlights.html">Highlights</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="join.html#faq">FAQs</a></li>
+                        <li><a href="join.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:clubs@university.edu"><i class="fas fa-envelope"></i> clubs@university.edu</a></li>
+                        <li><a href="tel:+15551234567"><i class="fas fa-phone"></i> (555) 123-4567</a></li>
+                        <li><a href="https://maps.google.com" target="_blank"><i class="fas fa-map-marker-alt"></i> Student Center, Room 204</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 University Student Clubs Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,1 +1,354 @@
 <!-- Gallery.html -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Gallery - UniClubs Portal</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                UniClubs
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="clubs.html">Clubs</a>
+                <a href="events.html">Events</a>
+                <a href="join.html">Join</a>
+                <a href="highlights.html">Highlights</a>
+                <a href="gallery.html" class="active">Gallery</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-shapes">
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+        </div>
+        <div class="hero-content">
+            <span class="section-badge pink">Moments</span>
+            <h1>Club <span>Gallery</span></h1>
+            <p>A visual journey through our most memorable club events, activities, and the vibrant campus life captured through the lens.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Stats -->
+    <section class="section gallery-stats">
+        <div class="container">
+            <div class="gallery-stats-grid">
+                <div class="gallery-stat-card">
+                    <i class="fas fa-camera" style="color: var(--neon-cyan); text-shadow: 0 0 15px rgba(0,240,255,0.5);"></i>
+                    <h3>500+</h3>
+                    <p>Photos Captured</p>
+                </div>
+                <div class="gallery-stat-card">
+                    <i class="fas fa-calendar-check" style="color: var(--neon-magenta); text-shadow: 0 0 15px rgba(255,0,229,0.5);"></i>
+                    <h3>80+</h3>
+                    <p>Events Covered</p>
+                </div>
+                <div class="gallery-stat-card">
+                    <i class="fas fa-users" style="color: var(--neon-green); text-shadow: 0 0 15px rgba(57,255,20,0.5);"></i>
+                    <h3>3,000+</h3>
+                    <p>Students Featured</p>
+                </div>
+                <div class="gallery-stat-card">
+                    <i class="fas fa-heart" style="color: var(--neon-pink); text-shadow: 0 0 15px rgba(255,45,120,0.5);"></i>
+                    <h3>10K+</h3>
+                    <p>Social Reactions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge pink">Browse</span>
+                <h2>Photo Gallery</h2>
+                <p>Explore snapshots from our club activities, events, and campus life.</p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="gallery-filter-btn active">All</button>
+                <button class="gallery-filter-btn">Tech Events</button>
+                <button class="gallery-filter-btn">Sports</button>
+                <button class="gallery-filter-btn">Cultural</button>
+                <button class="gallery-filter-btn">Community</button>
+                <button class="gallery-filter-btn">Competitions</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item tall">
+                    <div class="gallery-item-bg grad-1">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Hackathon</span>
+                        <h4>National Hackathon 2026</h4>
+                        <p>48 hours of non-stop coding and innovation</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-item-bg grad-2">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Cultural</span>
+                        <h4>Spring Concert Night</h4>
+                        <p>Annual music showcase by the Music Society</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-item-bg grad-3">
+                        <i class="fas fa-basketball"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Sports</span>
+                        <h4>Championship Finals</h4>
+                        <p>Basketball team winning the regional title</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-item-bg grad-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Community</span>
+                        <h4>Campus Tree Planting</h4>
+                        <p>Green Campus Initiative spring event</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide">
+                    <div class="gallery-item-bg grad-5">
+                        <i class="fas fa-earth-americas"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Cultural</span>
+                        <h4>International Food Festival</h4>
+                        <p>Celebrating global cuisines with 30+ food stalls</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-item-bg grad-6">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Tech</span>
+                        <h4>Robotics Showcase</h4>
+                        <p>Demonstrating autonomous robots at the expo</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide">
+                    <div class="gallery-item-bg grad-7">
+                        <i class="fas fa-masks-theater"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Cultural</span>
+                        <h4>Annual Theater Production</h4>
+                        <p>Drama club's rendition of "A Midsummer Night's Dream"</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item tall">
+                    <div class="gallery-item-bg grad-8">
+                        <i class="fas fa-person-swimming"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Sports</span>
+                        <h4>Swimming Championships</h4>
+                        <p>Our swimmers competing at regionals</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-item-bg grad-9">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Arts</span>
+                        <h4>Photography Exhibition</h4>
+                        <p>Annual showcase of student photography</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-item-bg grad-1">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Tech</span>
+                        <h4>Cybersecurity CTF</h4>
+                        <p>Capture The Flag competition highlights</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-item-bg grad-2">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Community</span>
+                        <h4>Charity Drive 2026</h4>
+                        <p>Volunteer Corps annual charity fundraiser</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section class="section gallery-featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge purple">Spotlight</span>
+                <h2>Featured Moments</h2>
+                <p>Detailed highlights from our most memorable events and activities.</p>
+            </div>
+
+            <div class="featured-event">
+                <div class="featured-image" style="background: linear-gradient(135deg, #0a0a2e, #1a0a3e); border: 1px solid rgba(184,77,255,0.2);">
+                    <i class="fas fa-code" style="color: var(--neon-purple); text-shadow: 0 0 30px rgba(184,77,255,0.6);"></i>
+                </div>
+                <div class="featured-text">
+                    <h3>National Hackathon Victory</h3>
+                    <p>Our Coding Society made history by winning the National Collegiate Hackathon 2026. The team of four developed an AI-powered healthcare accessibility platform in just 48 hours, impressing judges with its innovative approach and flawless execution. The project has since been picked up by a health-tech startup for further development.</p>
+                    <div class="featured-meta">
+                        <span><i class="fas fa-calendar"></i> March 15, 2026</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Tech Convention Center</span>
+                        <span><i class="fas fa-users"></i> 200+ Teams</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-event">
+                <div class="featured-image" style="background: linear-gradient(135deg, #1a0a1a, #2a0a2a); border: 1px solid rgba(255,0,229,0.2);">
+                    <i class="fas fa-earth-americas" style="color: var(--neon-magenta); text-shadow: 0 0 30px rgba(255,0,229,0.6);"></i>
+                </div>
+                <div class="featured-text">
+                    <h3>Spring Cultural Festival</h3>
+                    <p>The Spring Cultural Festival brought together over 2,000 students and community members for a day-long celebration of diversity. With 30+ food stalls representing cuisines from around the world, live performances by 15 cultural groups, art exhibitions, and a spectacular closing ceremony, it was the largest cultural event in the university's history.</p>
+                    <div class="featured-meta">
+                        <span><i class="fas fa-calendar"></i> May 12, 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Campus Amphitheater</span>
+                        <span><i class="fas fa-users"></i> 2,000+ Attendees</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-event">
+                <div class="featured-image" style="background: linear-gradient(135deg, #0a1a0a, #0a2a0a); border: 1px solid rgba(57,255,20,0.2);">
+                    <i class="fas fa-trophy" style="color: var(--neon-green); text-shadow: 0 0 30px rgba(57,255,20,0.6);"></i>
+                </div>
+                <div class="featured-text">
+                    <h3>Annual Sports Gala Highlights</h3>
+                    <p>The three-day Annual Sports Gala featured 12 different sports with participants from 8 universities. Our athletes broke 5 university records and brought home 18 gold medals, 12 silver, and 9 bronze. The basketball team's dramatic final-second buzzer-beater became the talk of the campus for weeks.</p>
+                    <div class="featured-meta">
+                        <span><i class="fas fa-calendar"></i> May 20-22, 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Sports Complex</span>
+                        <span><i class="fas fa-medal"></i> 39 Medals Won</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-graduation-cap"></i> UniClubs</h3>
+                    <p>Your gateway to an enriched campus experience. Discover, connect, and grow with student clubs at the University.</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="clubs.html">Clubs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="join.html">Join a Club</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="highlights.html">Highlights</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="join.html#faq">FAQs</a></li>
+                        <li><a href="join.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:clubs@university.edu"><i class="fas fa-envelope"></i> clubs@university.edu</a></li>
+                        <li><a href="tel:+15551234567"><i class="fas fa-phone"></i> (555) 123-4567</a></li>
+                        <li><a href="https://maps.google.com" target="_blank"><i class="fas fa-map-marker-alt"></i> Student Center, Room 204</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 University Student Clubs Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.gallery-filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
