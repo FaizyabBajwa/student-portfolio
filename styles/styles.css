@@ -1504,7 +1504,289 @@ img {
 /* ==================================================================
    8. JOIN.HTML CSS — How to Join Page
    ================================================================== */
+.join-steps {
+    background: var(--bg-dark);
+}
 
+.steps-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.step-item {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 48px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.step-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 36px;
+    top: 80px;
+    bottom: -48px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--neon-cyan), rgba(0, 240, 255, 0.05));
+    border-radius: 4px;
+}
+
+.step-number {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--bg-dark);
+    background: var(--neon-cyan);
+    box-shadow: var(--glow-cyan);
+    position: relative;
+    z-index: 2;
+}
+
+.step-content {
+    flex: 1;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 32px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.step-content:hover {
+    border-color: rgba(0, 240, 255, 0.15);
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.05);
+}
+
+.step-content h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-bright);
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.step-content a {
+    color: var(--neon-cyan);
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
+}
+
+.step-content a:hover {
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.6);
+}
+
+.step-content .step-tips {
+    margin-top: 16px;
+    padding: 16px;
+    background: rgba(0, 240, 255, 0.04);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--neon-cyan);
+}
+
+.step-content .step-tips p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.join-faq {
+    background: var(--bg-surface);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    margin-bottom: 16px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    border-color: rgba(0, 240, 255, 0.1);
+}
+
+.faq-item.active {
+    border-color: rgba(0, 240, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.05);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 24px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-bright);
+    text-align: left;
+    transition: var(--transition);
+}
+
+.faq-question i {
+    font-size: 0.9rem;
+    color: var(--neon-cyan);
+    transition: var(--transition);
+    flex-shrink: 0;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.5);
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+    color: var(--neon-magenta);
+    text-shadow: 0 0 8px rgba(255, 0, 229, 0.5);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+.faq-answer p {
+    padding: 0 28px 24px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.join-form-section {
+    background: var(--bg-dark);
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-bright);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text-bright);
+    background: var(--bg-input);
+    transition: var(--transition);
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.1), 0 0 15px rgba(0, 240, 255, 0.08);
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-group select option {
+    background: var(--bg-card);
+    color: var(--text-bright);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-container .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 16px;
+    font-size: 1rem;
+}
+
+.join-benefits {
+    background: var(--bg-surface);
+}
+
+.benefit-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 32px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.benefit-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 240, 255, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 240, 255, 0.04);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.benefit-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-bright);
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
 
 /* ==================================================================
    9. HIGHLIGHTS.HTML CSS — Club Achievements Page
