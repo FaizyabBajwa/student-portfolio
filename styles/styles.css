@@ -1509,7 +1509,258 @@ img {
 /* ==================================================================
    9. HIGHLIGHTS.HTML CSS — Club Achievements Page
    ================================================================== */
+.highlights-section {
+    background: var(--bg-dark);
+}
 
+.highlight-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.highlight-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 240, 255, 0.12);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 240, 255, 0.04);
+}
+
+.highlight-card-image {
+    height: 220px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.highlight-card-image i {
+    font-size: 4rem;
+    z-index: 2;
+    position: relative;
+}
+
+.highlight-card-image.gold {
+    background: linear-gradient(135deg, #1a1a0a, #2a2a0a);
+    border-bottom: 2px solid var(--neon-yellow);
+}
+.highlight-card-image.gold i { color: var(--neon-yellow); text-shadow: 0 0 30px rgba(255, 230, 0, 0.6); }
+
+.highlight-card-image.blue {
+    background: linear-gradient(135deg, #0a0a1a, #0a0a2a);
+    border-bottom: 2px solid var(--neon-blue);
+}
+.highlight-card-image.blue i { color: var(--neon-blue); text-shadow: 0 0 30px rgba(77, 109, 255, 0.6); }
+
+.highlight-card-image.rose {
+    background: linear-gradient(135deg, #1a0a0a, #2a0a1a);
+    border-bottom: 2px solid var(--neon-pink);
+}
+.highlight-card-image.rose i { color: var(--neon-pink); text-shadow: 0 0 30px rgba(255, 45, 120, 0.6); }
+
+.highlight-card-image.teal {
+    background: linear-gradient(135deg, #0a1a0a, #0a2a1a);
+    border-bottom: 2px solid var(--neon-green);
+}
+.highlight-card-image.teal i { color: var(--neon-green); text-shadow: 0 0 30px rgba(57, 255, 20, 0.6); }
+
+.highlight-card-image.violet {
+    background: linear-gradient(135deg, #0a0a1a, #1a0a2a);
+    border-bottom: 2px solid var(--neon-purple);
+}
+.highlight-card-image.violet i { color: var(--neon-purple); text-shadow: 0 0 30px rgba(184, 77, 255, 0.6); }
+
+.highlight-card-image.orange {
+    background: linear-gradient(135deg, #1a0a0a, #2a1a0a);
+    border-bottom: 2px solid var(--neon-orange);
+}
+.highlight-card-image.orange i { color: var(--neon-orange); text-shadow: 0 0 30px rgba(255, 106, 0, 0.6); }
+
+.highlight-card-image .award-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgba(10, 10, 15, 0.9);
+    border: 1px solid rgba(255, 230, 0, 0.25);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--neon-yellow) !important;
+    text-shadow: 0 0 8px rgba(255, 230, 0, 0.5);
+}
+
+.highlight-card-body {
+    padding: 28px;
+}
+
+.highlight-card-body h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-bright);
+    margin-bottom: 10px;
+}
+
+.highlight-card-body p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.highlight-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.highlight-meta .club-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--neon-cyan);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+.highlight-meta .year {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.highlights-counter {
+    background: var(--bg-surface);
+    position: relative;
+    overflow: hidden;
+}
+
+.highlights-counter::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 25% 50%, rgba(0, 240, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 75% 50%, rgba(255, 0, 229, 0.05) 0%, transparent 50%);
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    position: relative;
+    z-index: 2;
+}
+
+.counter-item {
+    text-align: center;
+    padding: 32px 16px;
+}
+
+.counter-item i {
+    font-size: 2.5rem;
+    color: var(--neon-yellow);
+    margin-bottom: 16px;
+    text-shadow: 0 0 20px rgba(255, 230, 0, 0.5);
+}
+
+.counter-item h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--text-bright);
+    margin-bottom: 6px;
+}
+
+.counter-item p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.highlights-testimonials {
+    background: var(--bg-dark);
+}
+
+.testimonial-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 36px;
+    border: 1px solid var(--border-color);
+    position: relative;
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    border-color: rgba(0, 240, 255, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 240, 255, 0.04);
+    transform: translateY(-4px);
+}
+
+.testimonial-card .quote-icon {
+    font-size: 2rem;
+    color: var(--neon-cyan);
+    opacity: 0.3;
+    margin-bottom: 16px;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--bg-dark);
+}
+
+.testimonial-avatar.bg-1 {
+    background: var(--neon-cyan);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+.testimonial-avatar.bg-2 {
+    background: var(--neon-magenta);
+    box-shadow: 0 0 15px rgba(255, 0, 229, 0.4);
+}
+
+.testimonial-avatar.bg-3 {
+    background: var(--neon-green);
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.4);
+}
+
+.testimonial-info h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-bright);
+}
+
+.testimonial-info span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
 
 /* ==================================================================
    10. GALLERY.HTML CSS — Club Gallery Page
